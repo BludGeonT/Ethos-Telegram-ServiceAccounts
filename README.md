@@ -17,13 +17,13 @@ We want to have a separate database set up soley for SERVICE ACCOUNTS.  The info
 
 The Database Structure should be as follows and named appropriately (EG:  ETHOS_SERVICEACCOUNTS):
 
-- SERVICEACCOUNT_NAME:  This will be an alpha-numeric field containing the name of the bot given when it was created by @botfather (eg: ethos-md5sum-bot)
-- SERVICEACCOUNT_ID:  This will be the ID of the bot created by @botfather and it will be a nuerical value only and should reject non-numeric values
-- SERVICEACCOUNT_APIKEY:  This will be the value of the API key that was provided by @botfather upon the bot creation
-- SERVICEACCOUNT_STATUS:  This will be a boolean value of either ENABLED or DISABLED.
-- SERVICEACCOUNT_CREATOR:  This will be the name of the EthosProject operator that created the service account
-- SERVICEACCOUNT_CREATION:  This will be a date value of the date that the SERVICE ACCOUNT was added into the Ethos-Telegram-ServiceAccount Database
-- SERVICEACCOUNT_MODULES:  When creating a new SERVICE ACCOUNT, this field should exist but be empty to start.  As other EthosProject MODULES assign a SERVICE ACCOUNT to use, a value here of which module will be added.  This could potentially be from one EthosProject module, or multiple modules.  The values for this field will be added by the other MODULES that use it.  
+- `SERVICEACCOUNT_NAME`:  This will be an alpha-numeric field containing the name of the bot given when it was created by @botfather (eg: ethos-md5sum-bot)
+- `SERVICEACCOUNT_ID`:  This will be the ID of the bot created by @botfather and it will be a nuerical value only and should reject non-numeric values
+- `SERVICEACCOUNT_APIKEY`:  This will be the value of the API key that was provided by @botfather upon the bot creation
+- `SERVICEACCOUNT_STATUS`:  This will be a boolean value of either ENABLED or DISABLED.
+- `SERVICEACCOUNT_CREATOR`:  This will be the name of the EthosProject operator that created the service account
+- `SERVICEACCOUNT_CREATION`:  This will be a date value of the date that the SERVICE ACCOUNT was added into the Ethos-Telegram-ServiceAccount Database
+- `SERVICEACCOUNT_MODULES`:  When creating a new SERVICE ACCOUNT, this field should exist but be empty to start.  As other EthosProject MODULES assign a SERVICE ACCOUNT to use, a value here of which module will be added.  This could potentially be from one EthosProject module, or multiple modules.  The values for this field will be added by the other MODULES that use it.  
 
 ### Ethos-Telegram-ServiceAccounts Workflow
 When clicking on the Ethos-Telegram-ServiceAccounts MODULE, a new screen should open up a new page to manage the SERVICE ACCOUNTS.
